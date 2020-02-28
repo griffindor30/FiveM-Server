@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\resources",
-    "\\resources\\[otherscripts]"
+    "\\resources\\mysql-async\\lib",
+    "\\resources\\[esx]\\esx_advancedgarage\\locales",
+    "\\resources\\[otherscripts]",
+    "\\resources\\[otherscripts]\\lastpostodb",
+    "\\resources\\[sesx]"
   ],
-  "SelectedNode": "\\resources\\[otherscripts]",
+  "SelectedNode": "\\resources\\[otherscripts]\\lastpostodb\\lastpos.sql",
   "PreviewInSolutionExplorer": false
 }
