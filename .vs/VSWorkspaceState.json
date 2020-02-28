@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\resources"
+    "\\resources",
+    "\\resources\\[otherscripts]"
   ],
-  "SelectedNode": "\\resources\\[customscripts]",
+  "SelectedNode": "\\resources\\[otherscripts]",
   "PreviewInSolutionExplorer": false
 }
