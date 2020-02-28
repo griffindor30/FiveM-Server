@@ -1,6 +1,4 @@
 --Version 1.5
-require "resources/mysql-async/lib/MySQL"
-
 --Déclaration des EventHandler
 RegisterServerEvent("projectEZ:savelastpos")
 RegisterServerEvent("projectEZ:SpawnPlayer")
