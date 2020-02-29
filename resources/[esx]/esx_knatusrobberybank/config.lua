@@ -1,5 +1,5 @@
 Config = {}
-Config.Locale = 'es'
+Config.Locale = 'en'
 Config.NumberOfCopsRequired = 0
 
 --Updated to choose between cash or black money
