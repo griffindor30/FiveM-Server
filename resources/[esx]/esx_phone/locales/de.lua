@@ -1,13 +1,13 @@
-Locales['de'] = {
-  ['new_message'] = '~b~Neue Nachricht',
-  ['press_take_call'] = '%s - Drücke ~INPUT_CONTEXT~ um den Anruf anzunehmen',
-  ['taken_call'] = '~y~%s~s~ hat den Anruf angenommen',
-  ['gps_position'] = 'ziel in GPS eingegeben',
-  ['message_sent'] = 'nachricht gesendet',
-  ['cannot_add_self'] = 'du kannst dich nicht selbst hinzufügen',
-  ['number_in_contacts'] = 'diese Nummer ist bereits in deinen Kontakten',
-  ['contact_added'] = 'kontakt hinzugefügt',
+Locales['en'] = {
+  ['new_message'] = '~b~You have recived a message:~s~ %s',
+  ['press_take_call'] = '%s - Press ~INPUT_CONTEXT~ to take the call',
+  ['taken_call'] = '~y~%s~s~ has taken the call',
+  ['gps_position'] = 'the destination has been added to your GPS',
+  ['message_sent'] = 'the message has been sent',
+  ['cannot_add_self'] = 'you can not add yourself!',
+  ['number_in_contacts'] = 'this number is already in your contact list',
+  ['contact_added'] = 'the contact has been added!',
   ['contact_removed'] = 'the contact has been removed!',
-  ['number_not_assigned'] = 'diese Nummer ist nicht vergeben...',
+  ['number_not_assigned'] = 'the number has not been assigned!',
   ['invalid_number'] = 'that\'s not an valid number!',
 }
