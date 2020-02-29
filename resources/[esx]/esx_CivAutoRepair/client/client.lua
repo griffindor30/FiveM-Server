@@ -95,14 +95,14 @@ Citizen.CreateThread(function ()
 			for i = 1, #CivRepairStation do
 				garageCoords2 = CivRepairStation[i]
 				DrawMarker(-27, garageCoords2[1], garageCoords2[2], garageCoords2[3], 0, 0, 0, 0, 0, 0, 5.0, 5.0, 2.0, 0, 157, 0, 155, 0, 0, 2, 0, 0, 0, 0)
-				if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), garageCoords2[1], garageCoords2[2], garageCoords2[3], true ) < 5 and PlayerData.job ~= nil and PlayerData.job.name == 'mecano' then
+				if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), garageCoords2[1], garageCoords2[2], garageCoords2[3], true ) < 5 and PlayerData.job ~= nil and PlayerData.job.name == 'civ' then
 				 ESX.ShowHelpNotification('Press ~INPUT_CONTEXT~ to Quick Vehicle Repair')
 					if(IsControlJustPressed(1, quickKey)) then
 						AutoRepair()
 						insidemarkercheck = true
 					end
 				end
-				if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), garageCoords2[1], garageCoords2[2], garageCoords2[3], true ) > 5 and PlayerData.job ~= nil and PlayerData.job.name == 'mecano' then
+				if GetDistanceBetweenCoords(GetEntityCoords(GetPlayerPed(-1)), garageCoords2[1], garageCoords2[2], garageCoords2[3], true ) > 5 and PlayerData.job ~= nil and PlayerData.job.name == 'civ' then
 					    if ESX.UI.Menu.IsOpen('default', GetCurrentResourceName(), 'civrepair_menu') then
        						ESX.UI.Menu.CloseAll()
    					end
