@@ -2,12 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\resources",
-    "\\resources\\mysql-async\\lib",
     "\\resources\\[esx]\\esx_advancedgarage\\locales",
-    "\\resources\\[otherscripts]",
-    "\\resources\\[otherscripts]\\lastpostodb",
-    "\\resources\\[sesx]"
+    "\\resources\\[esx]\\esx_CivAutoRepair\\client",
+    "\\resources\\[esx]\\esx_CivAutoRepair\\server",
+    "\\resources\\[esx]\\esx_knatusrobberybank\\server",
+    "\\resources\\[esx]\\esx_phone\\locales",
+    "\\resources\\[sesx]\\essentialmode",
+    "\\resources\\[sesx]\\es_extended"
   ],
-  "SelectedNode": "\\resources\\[otherscripts]\\lastpostodb\\lastpos.sql",
+  "SelectedNode": "\\resources\\[sesx]",
   "PreviewInSolutionExplorer": false
 }
