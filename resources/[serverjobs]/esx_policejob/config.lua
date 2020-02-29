@@ -174,7 +174,7 @@ Config.AuthorizedVehicles = {
 	},
 
 	boss = {
-		{ model = 'police3', label = 'Police Interceptor', price = 20000 }
+		{ model = 'police3', label = 'Police Interceptor', price = 20000 },
 		{ model = 'policet', label = 'Police Transporter', price = 18500 },
 		{ model = 'policeb', label = 'Police Bike', price = 30500 },
 		{ model = 'riot', label = 'Police Riot', price = 70000 },
