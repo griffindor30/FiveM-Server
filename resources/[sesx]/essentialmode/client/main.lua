@@ -53,7 +53,14 @@ AddEventHandler("playerSpawned", function()
 	TriggerServerEvent('playerSpawn')
 end)
 
-RegisterNetEvent("es:enablePvp")
-AddEventHandler("es:enablePvp", function()
-	pvpEnabled = true
-end)
+AddEventHandler("playerSpawned", function()
+  Citizen.CreateThread(function()
+
+    local player = PlayerId()
+    local playerPed = GetPlayerPed(-1)
+
+    -- Enable pvp
+    NetworkSetFriendlyFireOption(true)
+    SetCanAttackFriendly(playerPed, true, true)
+
+  end)
