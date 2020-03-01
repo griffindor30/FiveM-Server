@@ -14,9 +14,7 @@ Citizen.CreateThread(function()
 	end
 end)
 
-local loaded = false
 local oldPos
-local pvpEnabled = true
 
 Citizen.CreateThread(function()
 	while true do
@@ -42,9 +40,6 @@ AddEventHandler("es:setPlayerDecorator", function(key, value, doNow)
 	end
 end)
 
-local enableNative = {}
-
-local firstSpawn = true
 AddEventHandler("playerSpawned", function()
 	for k,v in pairs(myDecorators)do
 		DecorSetInt(PlayerPedId(), k, v)
@@ -52,15 +47,3 @@ AddEventHandler("playerSpawned", function()
 
 	TriggerServerEvent('playerSpawn')
 end)
-
-AddEventHandler("playerSpawned", function()
-  Citizen.CreateThread(function()
-
-    local player = PlayerId()
-    local playerPed = GetPlayerPed(-1)
-
-    -- Enable pvp
-    NetworkSetFriendlyFireOption(true)
-    SetCanAttackFriendly(playerPed, true, true)
-
-  end)
