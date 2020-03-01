@@ -1,4 +1,4 @@
-local curTemplate
+alocal curTemplate
 local curTags = {}
 
 local function detectUpdates()
