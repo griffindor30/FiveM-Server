@@ -2,14 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\resources",
-    "\\resources\\[esx]\\esx_advancedgarage\\locales",
-    "\\resources\\[esx]\\esx_CivAutoRepair\\client",
-    "\\resources\\[esx]\\esx_CivAutoRepair\\server",
-    "\\resources\\[esx]\\esx_knatusrobberybank\\server",
-    "\\resources\\[esx]\\esx_phone\\locales",
-    "\\resources\\[sesx]\\essentialmode",
-    "\\resources\\[sesx]\\es_extended"
+    "\\resources\\[otherscripts]",
+    "\\resources\\[otherscripts]\\DiscordBot"
   ],
-  "SelectedNode": "\\resources\\[sesx]",
+  "SelectedNode": "\\resources\\[otherscripts]\\DiscordBot\\Config.lua",
   "PreviewInSolutionExplorer": false
 }
