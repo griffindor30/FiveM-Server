@@ -7,8 +7,8 @@ Citizen.CreateThread(function()
 		Citizen.Wait(0)
 
 		if NetworkIsSessionStarted() then
-			TriggerServerEvent('en:firstJoinProper')
-			TriggerEvent('en:allowedToSpawn')
+			TriggerServerEvent('es:firstJoinProper')
+			TriggerEvent('es:allowedToSpawn')
 			return
 		end
 	end
@@ -24,7 +24,7 @@ Citizen.CreateThread(function()
 		local pos = GetEntityCoords(PlayerPedId())
 
 		if(oldPos ~= pos)then
-			TriggerServerEvent('en:updatePositions', pos.x, pos.y, pos.z)
+			TriggerServerEvent('es:updatePositions', pos.x, pos.y, pos.z)
 			oldPos = pos
 		end
 	end
@@ -32,8 +32,8 @@ end)
 
 local myDecorators = {}
 
-RegisterNetEvent("en:setPlayerDecorator")
-AddEventHandler("en:setPlayerDecorator", function(key, value, doNow)
+RegisterNetEvent("es:setPlayerDecorator")
+AddEventHandler("es:setPlayerDecorator", function(key, value, doNow)
 	myDecorators[key] = value
 	DecorRegister(key, 3)
 
@@ -53,7 +53,7 @@ AddEventHandler("playerSpawned", function()
 	TriggerServerEvent('playerSpawn')
 end)
 
-RegisterNetEvent("en:enablePvp")
-AddEventHandler("en:enablePvp", function()
+RegisterNetEvent("es:enablePvp")
+AddEventHandler("es:enablePvp", function()
 	pvpEnabled = true
 end)
