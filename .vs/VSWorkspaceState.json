@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\resources",
-    "\\resources\\[sesx]\\essentialmode\\client"
+    "\\resources\\[sesx]",
+    "\\resources\\[sesx]\\esplugin_mysql",
+    "\\resources\\[sesx]\\es_extended\\server\\classes"
   ],
-  "SelectedNode": "\\Other Resourses",
+  "SelectedNode": "\\resources\\[sesx]\\es_extended",
   "PreviewInSolutionExplorer": false
 }
