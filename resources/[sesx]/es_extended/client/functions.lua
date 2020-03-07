@@ -281,9 +281,15 @@ ESX.UI.ShowInventoryItemNotification = function(add, item, count)
 	})
 end
 
-ESX.Game.GetPedMugshot = function(ped)
+ESX.Game.GetPedMugshot = function(ped, transparent)
 	if DoesEntityExist(ped) then
-		local mugshot = RegisterPedheadshot(ped)
+		local mugshot
+
+		if transparent then
+			mugshot = RegisterPedheadshotTransparent(ped)
+		else
+			mugshot = RegisterPedheadshot(ped)
+		end
 
 		while not IsPedheadshotReady(mugshot) do
 			Citizen.Wait(0)
@@ -676,6 +682,7 @@ ESX.Game.GetVehicleProperties = function(vehicle)
 
 			wheels            = GetVehicleWheelType(vehicle),
 			windowTint        = GetVehicleWindowTint(vehicle),
+			xenonColor        = GetVehicleXenonLightsColour(vehicle),
 
 			neonEnabled       = {
 				IsVehicleNeonLightEnabled(vehicle, 0),
@@ -780,6 +787,7 @@ ESX.Game.SetVehicleProperties = function(vehicle, props)
 		end
 
 		if props.neonColor then SetVehicleNeonLightsColour(vehicle, props.neonColor[1], props.neonColor[2], props.neonColor[3]) end
+		if props.xenonColor then SetVehicleXenonLightsColour(vehicle, props.xenonColor) end
 		if props.modSmokeEnabled then ToggleVehicleMod(vehicle, 20, true) end
 		if props.tyreSmokeColor then SetVehicleTyreSmokeColor(vehicle, props.tyreSmokeColor[1], props.tyreSmokeColor[2], props.tyreSmokeColor[3]) end
 		if props.modSpoilers then SetVehicleMod(vehicle, 0, props.modSpoilers, false) end
